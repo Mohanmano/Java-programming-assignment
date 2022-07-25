@@ -1,0 +1,24 @@
+      1Q.     Write a function to add integer values of an array ?
+      Ans.      public class Sum  {
+                  public static void main(String[] args)  {
+                     int [] arr = new int [] {1,2,3,4,5};
+                     int sum = 0;   
+                  for ( int i = 0; i < arr.length; i++)  {
+                      sum = sum + arr[i];
+                     }
+                   System.out.println("Sum of an array is:",+sum);
+                 }
+               }
+      2Q.       Write a function to calculate the average value of an array of integers ?
+      Ans.                  public static void main(String[] args) {
+                                int [] arr = {6,7,8,9,10};
+                                int total = 0;
+                                  for(int i=0; i<arr.length; i++)  {
+                                   	total = total + arr[i];
+                                  }
+                                  float avg = total / arr.length;
+                                System.out.println(" The Average is: %f",+avg);
+                              }
+                            }
+       3Q.      Write a program to find the index of an array element ?
+       Ans.             
