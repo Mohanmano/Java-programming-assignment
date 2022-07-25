@@ -1,0 +1,89 @@
+1Q.  How to create a class, object, method and its signature ?
+Ans. If we want to create a class named cls with some statement we write like:
+        public class cls {
+                   Statements;
+                        }
+     If we want to create an object we can create inside the main function of the program which is like:
+          cls myObj = new cls();
+       we can create multiple Objects to a class at a time by different object names.
+     Methos functon is create outside of main function and then we call it in the main function which is like:
+                      public class cls {
+                          static void myMethod() {
+                           System.out.println("Wishes from Mohan");
+                            }
+  
+                         public static void main(String[] args) {
+                          myMethod();
+                            }
+                           }
+2Q.   Write a program to print your name ?
+Ans.                    public class cls {
+                        public static void main(String[] args) {
+                           System.out.println("Saya Mohan");
+                              }
+                            }
+3Q.   Write a program for a Single line comment, multi-line and documentation comments ?
+Ans.        Single line command : Entry level programmer used mostly the single line comments:
+                                class cls
+                                    {
+                                       public static void main(String args[])
+                                         {
+                                         System.out.println("Single line comment");
+                                            }
+                                           }
+             Multiple line comments: we can write Mutli line comment by using "//" in that beginning will be like " /* " and ends with " */ "
+                                            class cls {
+                                              public static void main(String args[])
+                                                {
+                                        System.out.println("Multi line comments below");
+                                               /*Comment line 1
+                                                 Comment line 2
+                                                 Comment line 3*/
+                                                }
+                                              }
+ 4Q.   Define variables for different Data Types int, Boolean, char, float, double and print on the Console ?
+ Ans.                   int a = 2, b = 4, c = 6;
+                        float pi = 3.14f;
+                        double do = 20.22d;
+                        char a = ’v’;
+                        Boolean = yes or no
+ 5Q.   Define the local and Global variables with the same name and print both variables and understand the scope of the variables ?
+ Ans.  Local Variable is defined as a type of variable declared within programming block. It can only be used inside the code block
+       in which it is declared. The local variable exists until the block of the function is under execution. After that, it will be
+       destroyed automatically.
+                        public int add(){
+                          int a =4;
+                          int b=5;
+                          return a+b;
+                              }                      
+                where a and b are variables.
+       A Global Variable in the program is a variable defined outside the function. It has a global scope means it holds its value
+       throughout the lifetime of the program. Hence, it can be accessed throughout the program by any function defined within the 
+       program, unless it is shadowed.
+                      int a =4;
+                      int b=5;
+                      public int add(){
+                        return a+b;
+                          }
+ 6Q.    Write a function to print your name and call the function from main method ?
+ Ans.                 public class cls {
+                        static void myMethod() {
+                          System.out.println("Iam Saya Mohan");
+                           }
+                      public static void main(String[] args) {
+                             myMethod();
+                               }
+                             }
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+                                              
+                                              
+                                              
