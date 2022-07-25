@@ -1,0 +1,88 @@
+    1Q.     Write a function for arithmetic operators(+,-,*,/) ?
+    Ans.        System.out.println("Integer Arithmetic");
+		                  int i = 1;
+                      int i = i + 1;
+		                  int n = i * 3;
+	                  	int m = n / 4;
+	                  	int p = m - i;
+	                   	int q = -p;
+		              System.out.println("i = " + i);
+		              System.out.println("n = " + n);
+		              System.out.println("m = " + m);
+		              System.out.println("p = " + p);
+		              System.out.println("q = " + q);
+    2Q.      Write a method for increment and decrement operators(++, --) ?
+    Ans.            int a, x, y;
+                     a = 10;
+                     x = ++a;
+                     y = --a
+             System.out.println("a: "+a); 
+             System.out.println("x: "+x);
+             System.out.println("y: "+y);
+                  }
+               }
+    3Q.      Program to equal operator and not equal operators ?
+    Ans.              public static void main(String[] args) {
+                         char x = "Saya";
+                         char y = "Mohan";
+                          if (x += y) {
+                      System.out.println("x and y are equal.");
+                     }
+                     if (x != y) {
+                      System.out.println("x and y are not equal.");
+                          }
+   4Q.        Write a program to find the two numbers equal or not ?
+   Ans.       Public static void main(String[] args)   {
+                      int a = 5;
+                      int b = 10;
+                      if(a == b) {
+                      System,out.println("a and b are equal");
+                      }
+                      else {
+                      System.out.println("a and b are not equal");
+                      }
+                     }
+   5Q.        Programs on Logical AND,OR operator and Logical NOT ?
+   Ans.             public static void main (String[] args) {
+                        int p = 10;
+                        int q = 20;
+                        int r = 30;
+                          if ((p<q && p<r) || (q>p && r>p)) {
+                          int Z = p+q+r;
+                          System.out.println(" the value of Z is",+Z);
+                         }
+                         else {
+                          int Y = r-q-p;
+                          System.out.println(" the value of Y is",+Y);
+                          }
+                         }
+    6Q.       Program for relational operators (<,<==, >, >==) ?
+    Ans.                public static void main(String args[]) {
+                                int a = 10;
+                                int b = 20;
+                           System.out.println("a == b = " + (a == b) );
+                           System.out.println("a != b = " + (a != b) );
+                           System.out.println("a > b = " + (a > b) );
+                           System.out.println("a < b = " + (a < b) );
+                           System.out.println("b >= a = " + (b >= a) );
+                           System.out.println("b <= a = " + (b <= a) );
+                                   }
+                              }
+    7Q.     Print the smaller and larger number ?
+    Ans.          int a = 50;
+                  int b = 100;
+                  int c = 150;
+                    if (a<b && a<c)  {
+                   System.out.println(" the smallest number is:",+a);
+                  }
+                   else if (b<c)  {
+                   System.out.println("the biggest  number is:",+c);
+                  }
+                }
+                        
+                        
+                        
+                        
+                  
+                  
+                  
