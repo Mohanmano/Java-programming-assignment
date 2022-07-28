@@ -1,0 +1,115 @@
+    1Q.     Different ways creating a string ?
+    Ans.    There are two ways to create a String object: 
+                 I) By string literal : Java String literal is created by using double quotes.
+                       For Example: String s=“Mohan”;  
+                II) By new keyword : Java String is created by using a keyword “new”.
+                       For example: String s=new String(“Mohan”); 
+                       
+    2Q.     Concatenating two strings using + operator ? 
+    Ans.         class Str{
+                   public static void main(String args[])   {
+                    String s="Saya"+" Mohan";
+                  System.out.println(s);//Sachin Tendulkar
+                         }
+                     }
+                     
+    3Q.     Finding the length of the string ?
+    Ans.      public static void main(String args[]) {  
+                 String s1="Saya-Mohan";  
+          System.out.println("string length is: "+s1.length()); 
+                     }  
+                     
+    4Q.     Extract a string using Substring ?
+    Ans.       public static void main(String args[]){
+                 String s1="Saya mohan";
+                System.out.println(s1.substring(5,10));
+                   }
+                   
+    5Q.     Searching in strings using indexOf() ?
+    Ans.         public static void main(String[] args) {
+                      String myStr = "Mohan";
+                      int strIndex = 0;
+                    System.out.println("String: "+myStr);
+                     strIndex = myStr.indexOf('h');
+                     System.out.println("Character m found at index: "+strIndex);
+                        }
+      
+      6Q.     Matching a String Against a Regular Expression With matches() ?
+      Ans.             public static void main(String args[]) {
+                      String[] str = {"", "12345", "A12345", "12345B", "12345a" , "abcd" , "aa343"};
+                          for(String str : str) {
+                          System.out.println(" does " + alphabet + " contains alphabetic words : " + alphabet.matches(".*[A-Za-z].*"));      
+      
+      7Q.     Comparing strings using the methods equals() ? 
+      Ans.      public static void main(String args[]) { 
+                          String s1="Saya";
+                          String s2="Mohan";
+                   System.out.println(s1.equals(s2));
+                         }
+                         
+      8Q.     equalsIgnoreCase(), startsWith(), endsWith() and compareTo() ?
+      Ans.        public static void main(String[] args)  {
+                        String s1 = "MOHAN";
+                        String s2 = "mohan";
+                       System.out.println(s1.equalsIgnoreCase(s2));
+                        System.out.println(s1.startsWith("MO));
+                       System.out.println(s2.endsWith("ha"));
+                       if(str1.compareTo(str2) == 0)  {
+                     System.out.println("str1 is equal to str2");
+                      }
+                      else {
+                     System.out.println("str1 is not equal to str2");
+                           }
+                             }
+                          
+       9Q.     Trimming strings with trim() ?
+       Ans.         public static void main(String[] args) {
+                       String myStr = "       Hello All this is Mohan        ";
+                      System.out.println(myStr);
+                    System.out.println(myStr.trim());
+                         }
+                         
+       10Q.     Replacing characters in strings with replace() ?
+       Ans.        public static void main(String[] args) {  
+                         String str = "ababababab";  
+                         String str1 = str.replace("b","a");  
+                          System.out.println(str1);
+                            }
+                            
+       11Q.     Splitting strings with split() ?
+       Ans.         public static void main(String args[])  {
+                   String str = "Hello@Welcometo@myworlds";
+                   String[] arrOfStr = str.split("@", 2);
+                    for (String a : arrOfStr)
+                     System.out.println(a);
+                        }
+                     }
+       
+       12Q.     Converting Numbers to Strings with valueOf() ?
+       Ans.             public static void main(String[] args) {    
+                                Integer i = new Integer(123);
+                       System.out.println("Before conversion: " + i.getClass().getName());    
+                       System.out.println("After conversion: " + String.valueOf(i).getClass().getName());
+                                    }
+                               }   
+       
+       13Q.     Converting integer objects to Strings ?
+       Ans.         public static void main(String args[])  { 
+                       int number = 1234; 
+                       String str = String.valueOf(number);
+                      System.out.println("With valueOf method: string5 = " + str);
+                             }
+                             
+       14Q.     Converting to uppercase and lowercase ?
+       Ans.     public static void main(String[] args)  {
+                    String s1 = new String ("this is string one");
+                    String s2 = new String ("THIS IS STRING TWO");
+                    System.out.println(s1.toUpperCase());
+                    System.out.println(s2.toLowerCase());
+                            }
+                           
+
+       
+       
+       
+      
