@@ -173,17 +173,145 @@
                                                }
                                            }
        12Q.     Write a method to remove duplicate elements from an array ?
-       Ans.      
-       
-       
-       
-       
-       
-       
-       
-       
-       
-                               
- 
+       Ans.             public class Duplicate_int {
+                            public static void main(String[] args) {
+                              int index=0;
+                              int[] arr = {10,20,20,50,50,45};
+                              int size = arr.length;
+                              int duplicate,flag=0,count;
+                              int[] anti_dup= new int[size];
+                              int i,j;
+                             System.out.println("Before removing duplicate from the array:");
+                                 for(i=0;i<size;i++)  {
+                                    System.out.println(arr[i]);
+                                                  }
+                                   for(i=0;i<size;i++)   {
+                                               count=0;
+                                   for(j=i+1;j<size;j++)  {
+                                      if(arr[i]==arr[j]) {
+                                          count=count+1;
+                                          break;
+                                             }
+                                         } 
+                                      if(count==0)  {
+                                         anti_dup[index]=arr[i];
+                                         index++;
+                                              }
+                                            }
+                                      for(i=0;i<index;i++)  {
+                                       arr[i]=anti_dup[i];
+                                              }
+                                 System.out.println("After removing duplicate from the array");
+                                       for(i=0;i<index;i++) {
+                                         System.out.println(arr[i]);
+                                               }
+                                             }
+                                          } 
+       13Q.	 Write a method to find the second largest number in an array ?
+       Ans.		 public static void main(String []args)    {
+		            int n;     
+			   System.out.println("Enter the size of the array");
+                           n=Integer.parseInt(obj.readLine());          
+                           int arr[]=new int[n];   
+                            System.out.println("Enter the array");  
+                              for(int i=0;i<n;i++)   {
+                                     arr[i]=sc.nextInt();
+                                          }
+                              for(int i=0;i<n;i++)   {
+                                 for(int j=i+1;j<n;j++)  {
+                                       if(arr[i]<arr[j])  {
+                                          int temp=arr[i];
+                                          arr[i]=arr[j];
+                                          arr[j]=temp;
+                                               }
+                                            }
+                                         }
+                  System.out.println("Second Largest element is "+arr[1]);
+                                    }
+                                  }
+ 	14Q.	  Write a method to find number of even number and odd numbers in an array ?
+	Ans.		  public static void main(String[] args)  {
+                           int[] arr = {5, 7, 2, 4, 9, 13, 6};
+	                System.out.println("Actual Array: "+Arrays.toString(arr)); 
+	                   int ctr = 0;
+                        	for(int i = 0; i < arr.length; i++)  {
+	                        	  if(arr[i] % 2 == 0)
+			                  ctr++;
+	                                   }
+	                System.out.println("Number of even numbers : "+ctr);
+	                System.out.println("Number of odd numbers  : "+(arr.length-ctr));
+                             }
+                          }
+ 	 15Q.	  Write a function to get the difference of largest and smallest value ?
+	 Ans.	     public static void main(String[] args)  {
+                        int[] arr = {5, 7, 2, 4, 9, 13, 6};
+	            System.out.println("Actual Array: "+Arrays.toString(arr)); 
+	             int max_val = array_nums[0];
+	             int min = array_nums[0];
+	               for(int i = 1; i < arr.length; i++)  {
+		                 if(arr[i] > max_val)
+			             max_val = arr[i];
+		               else if(arr[i] < min)
+			             min = arr[i];
+	                                  }
+	                System.out.println("Difference between the largest and smallest value of the array: "+(max_val-min));	
+                                     }
+                                  }
+     	 16Q.	  Write a method to verify if the array contains two specified elements(12,23) ?
+	 Ans.	     public static void main(String[] args)  {
+                          int[] arr = {9, 26, 18, 12, 5, 23, 16};
+	          System.out.println("The Array: "+Arrays.toString(arr)); 
+	                  int num1 = 12;
+                          int num2 = 23;
+        	System.out.println("Result: "+result(arr, num1, num2));
+                             }	
+                   public static boolean result(int[] arr, int num1, int num2) {
+                        for (int number : arr) {
+                          boolean r = number != num1 && number != num2;
+                          if (r) {
+                            return false;
+                               }
+                            }
+                            return true;
+                           }
+ 	 17Q.	  Write a program to remove the duplicate elements and return the new array ?
+	 Ans.	    public static void main(String[] args) {
+                    int arr[] = {20, 20, 30, 40, 50, 50, 50};  
+		        System.out.println("Original array length: "+arr.length);
+		        System.out.print("Array elements are: ");
+                           for (int i = 0; i < arr.length; i++)  {
+                               System.out.print(arr[i]+" ");
+                                 }
+			System.out.println("\n");
+		        System.out.println("The new length of the array is: "+array_sort(arr));
+		          }
+                   public static int array_sort(int[] arr) {
+                            int index = 1;
+                            for (int i = 1; i < arr.length; i++) {
+                               if (arr[i] != arr[index-1])
+                                   arr[index++] = arr[i];
+                                       }
+	                      return index;
+                                }
+	  18Q.	   Write a function to find the missing number of sorted array of 1 to 100 ?
+	  Ans.		  public static void main(String[] args) {
+                           Scanner sc = new Scanner(System.in);
+                            System.out.println("Enter the n value: ");
+                            int n = sc.nextInt();
+                            int inpuArray[] = new int[n];
+                            System.out.println("Enter (n-1) numbers: ");
+                             for(int i=0; i<=n-2; i++) {
+                                inpuArray[i] = sc.nextInt();
+                                      }
+                          int sumOfAll = (n*(n+1))/2;
+                          int sumOfArray = 0;
+                          for(int i=0; i<=n-2; i++) {
+                           sumOfArray = sumOfArray+inpuArray[i];
+                                   }
+                          int missingNumber = sumOfAll-sumOfArray;
+                     System.out.println("Missing number is: "+missingNumber);
+                            }
+                         }
+ 	  
  
  
