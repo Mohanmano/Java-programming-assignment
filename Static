@@ -1,0 +1,45 @@
+  1Q.     Write a class with 2 static variables, 2 Instance variables, 2 static methods, 2 instance methods and a main method ?
+  Ans.             class JavaExample{
+                     static int var1=77; 
+                            String var2;
+                 public static void main(String args[])  {
+	                     JavaExample ob1 = new JavaExample();
+	                     JavaExample ob2 = new JavaExample();
+	                     	ob1.var1=88;
+	                    ob1.var2="I'm Object1";
+                        ob2.var1=99;
+	                    ob2.var2="I'm Object2";
+	                System.out.println("ob1 integer:"+ob1.var1);
+	                System.out.println("ob1 String:"+ob1.var2);
+	                System.out.println("ob2 integer:"+ob2.var1);
+	                System.out.println("ob2 STring:"+ob2.var2);
+                     }
+                  }
+   2Q.   Print instance variables in static methods ?
+   Ans.       class JavaExample3 {
+                   static int var1;
+                   static String var2;
+                     static void disp(){
+                    System.out.println("Var1 is: "+var1);
+                    System.out.println("Var2 is: "+var2);
+                          }
+            public static void main(String args[])  {
+                       disp();
+                     }
+                    }
+   3Q.   Print static variables in Instance methods ?
+   Ans.             class JavaExample{
+                          static int age;
+                          static String name;
+                          static void disp(){
+                            System.out.println("Age is: "+age);
+                            System.out.println("Name is: "+name);
+                                }
+                    public static void main(String args[])   {
+	                           age = 25;
+	                          name = "Mohan";
+                             disp();
+                              }
+                          }
+   
+   
